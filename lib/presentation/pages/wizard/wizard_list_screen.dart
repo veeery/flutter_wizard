@@ -5,6 +5,8 @@ import 'package:flutter_wizard/presentation/bloc/wizard_list/wizard_list_bloc.da
 class WizardListScreen extends StatefulWidget {
   const WizardListScreen({Key? key}) : super(key: key);
 
+  static const routeName = '/wizard-list';
+
   @override
   State<WizardListScreen> createState() => _WizardListScreenState();
 }

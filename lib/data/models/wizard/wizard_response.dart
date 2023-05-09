@@ -1,13 +1,12 @@
 import 'package:equatable/equatable.dart';
 import 'package:flutter_wizard/data/models/wizard/wizard_model.dart';
 
-
 class WizardResponse extends Equatable {
   final List<WizardModel> wizardList;
 
-  const WizardResponse({required this.wizardList});
+  WizardResponse({required this.wizardList});
 
-  factory WizardResponse.fromjson(Map<String, dynamic> json) {
+  factory WizardResponse.fromJson(Map<String, dynamic> json) {
     return WizardResponse(
       wizardList: List<WizardModel>.from(
         (json['results'] as List).map(
@@ -17,10 +16,10 @@ class WizardResponse extends Equatable {
     );
   }
 
-  // todo toJson here
+  Map<String, dynamic> toJson() => {
+        "results": List<dynamic>.from(wizardList.map((e) => e.toJson())),
+      };
 
   @override
-  List<Object?> get props => [
-        wizardList,
-      ];
+  List<Object?> get props => [wizardList];
 }

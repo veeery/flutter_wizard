@@ -16,11 +16,3 @@ class ServerFailure extends Failure {
 class ConnectionFailure extends Failure {
   ConnectionFailure({String message = 'Failed to Connect'}) : super(message);
 }
-
-class DatabaseFailure extends Failure {
-  DatabaseFailure({String message = 'Database Failure'}) : super(message);
-}
-
-class SSLFailure extends Failure {
-  SSLFailure({String message = 'CERTIFICATE_VERIFY_FAILED'}) : super(message);
-}

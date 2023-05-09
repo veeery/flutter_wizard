@@ -20,6 +20,12 @@ class WizardModel extends Equatable {
     );
   }
 
+  Map<String, dynamic> toJson() => {
+        "id": id,
+        "firstName": firstName,
+        "lastName": lastName,
+      };
+
   Wizard toEntity() {
     return Wizard(
       id: id,
