@@ -16,9 +16,11 @@ class WizardResponse extends Equatable {
     );
   }
 
-  Map<String, dynamic> toJson() => {
-        "results": List<dynamic>.from(wizardList.map((e) => e.toJson())),
-      };
+
+
+  // Map<String, dynamic> toJson() => {
+  //       "results": List<dynamic>.from(wizardList.map((e) => e.toJson())),
+  //     };
 
   @override
   List<Object?> get props => [wizardList];
