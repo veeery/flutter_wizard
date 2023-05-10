@@ -1,28 +1,3 @@
-// // colors
-// import 'package:flutter/material.dart';
-//
-// const Color kRichBlack = Color(0xFF000814);
-// const Color kOxfordBlue = Color(0xFF001D3D);
-// const Color kPrussianBlue = Color(0xFF003566);
-// const Color kMikadoYellow =
-// const Color  =
-// const Color  =
-//
-// const kColorScheme = ColorScheme(
-//   primary: kMikadoYellow,
-//   primaryContainer: kMikadoYellow,
-//   secondary: kPrussianBlue,
-//   secondaryContainer: kPrussianBlue,
-//   surface: kRichBlack,
-//   background: kRichBlack,
-//   error: Colors.red,
-//   onPrimary: kRichBlack,
-//   onSecondary: Colors.white,
-//   onSurface: Colors.white,
-//   onBackground: Colors.white,
-//   onError: Colors.white,
-//   brightness: Brightness.dark,
-// );
 
 import 'package:flutter/material.dart';
 

@@ -22,7 +22,6 @@ class WizardRemoteDataSourceImpl implements WizardRemoteDataSource {
     if (response.statusCode == 200) {
       Map<String, dynamic> map = {
         'results': jsonDecode(response.body),
-        // todo add pagination here later
       };
 
       String data = json.encode(map);
